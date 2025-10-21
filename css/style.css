@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+  font-family: "Roboto", sans-serif;
+}
+:root{
+  --accent-red-color:  rgb(217, 39, 39);
+  --accent-blue-color:  rgb(105, 180, 245);
+  --bg-color:#666;
+}
+.text-h1 {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+.text-h2 {
+  font-weight: 600;
+  font-size: 22px;
+}
+.text-h3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.text-h4{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.text-p {
+  font-size: 22px;
+  margin-bottom: 60px;
+}
+/* Header */
+.header {
+}
+.header__navigation{
+  margin: 20px 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.logo {
+  font-size: 25px;
+  font-weight: 500;
+}
+.logo span{
+  color:var(--accent-red-color);
+}
+.navigation__menu {
+  display: flex;
+  gap: 20px;
+}
+.navigation__menu a{
+  color: black;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.navigation__menu a:hover{
+  opacity: 0.7;
+}
+.material-icons {
+  cursor: pointer;
+  font-size: 30px;
+}
+.dropbtn {
+  font-size: 20px;
+  transition: 0.5s;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  padding: 12px 16px;
+  font-size: 15px;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {opacity: 0.5;}
+.header__text {
+  padding: 80px 0;
+  text-align: center;
+  color: white;
+  background-color:var(--bg-color);
+}
+.header-btn {
+  transition: 0.5s;
+  font-size: 22px;
+  background-color: var(--accent-blue-color);
+  padding: 15px 30px;
+  color: white;
+  border-radius: 30px;
+} 
+.header-btn:hover{
+  opacity: 0.7;
+}
+
+/* Catalog */
+.catalog {
+  display: grid;
+  grid-template-columns: 20%  80%;
+  justify-content: space-between;
+  padding: 30px 20px;
+  gap: 20px;
+}
+.filters {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  padding: 10px;
+  position: sticky;
+  top: 10px;
+  height: fit-content;
+}
+.saveFilters-btn {
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+  background-color: var(--accent-blue-color);
+  height: 40px;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.saveFilters-btn:hover{
+  opacity: 0.7;
+}
+.filters__line{
+  margin: 0 auto;
+  width: 100%;
+  height: 1px;
+  background-color: var(--bg-color);
+  margin: 10px 0;
+}
+.filter-btn{
+  width: 19px;
+  height: 17px;
+  background-image: url(../img/check.svg);
+  margin-right: 5px;
+}
+.filter-btn.done{
+  background-image: url(../img/chech-done.svg);
+}
+.filters span{
+  font-size: 20px;
+}
+.size {
+  margin-top: 30px;
+}
+.products{
+  margin-right: 20px;
+}
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 45px;
+}
+.section-title {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--bg-color);
+}
+.card {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.05);
+  border-radius: 20px;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.card:hover{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.price{
+  color: var(--accent-red-color);
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.price > i{
+  color: black;
+}
+/* Form */
+.contact {
+  padding: 80px 0;
+  background-color: var(--bg-color);
+  text-align: center;
+}
+.contact__title {
+  margin: 0 auto;
+  max-width: 600px;
+  font-size: 30px;
+  color: white;
+  text-transform: capitalize;
+}
+.form input{
+}
+.form__container {
+  margin: 0 auto;
+  width: 344px;
+  height: 62px;
+  border-radius: 42px;
+  border: 1px solid rgba(255,255,255,0.6)
+}
+.contact-btn {
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root{
+    scroll-behavior: smooth;
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+  <title>Cloth store</title>
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="header__navigation">
+    <div class="logo">Fashion<span>Store</span></div>
+    <ul class="navigation__menu">
+      <li><a href="#header">About us</a></li>
+      <li>
+      <div class="dropdown">
+        <button class="dropbtn">Catalog</button>
+        <div class="dropdown-content">
+          <a href="#women">Women</a>
+          <a href="#men">Men</a>
+          <a href="#unisex">Unisex</a>
+        </div>
+      </div>
+    </li>
+      <li><a href="#contact">Contacts</a></li>
+    </ul>
+    <div class="storage"><i class="material-icons">shopping_basket</i></div>
+    </nav>
+    <div class="header__text">
+    <h1 class="text-h1">Stylish clothes for everyone</h1>
+    <p class="text-p">Discover the latest fashion trends in our catalog. <br> Quality, style, and affordable prices.</p>
+    <a href="#catalog" class="header-btn">View catalog</a>
+    </div>
+  </header>
+  <section class="catalog" id="catalog">
+    <div class="filters">
+    <h2 class="text-h2">Filters</h2>
+    <div class="filters__line"></div>
+    <div class="category">
+      <h3 class="text-h3">Category</h3>
+      <ul>
+      <li><button class="filter-btn"></button><span>Women</span></li>
+      <li><button class="filter-btn"></button><span>Men</span></li>
+      <li><button class="filter-btn"></button><span>Unisex</span></li>
+      </ul>
+    </div>
+    <div class="size">
+      <h3 class="text-h3">Size</h3>
+      <ul>
+      <li><button class="filter-btn"></button><span>xs</span></li>
+      <li><button class="filter-btn"></button><span>s</span></li>
+      <li><button class="filter-btn"></button><span>m</span></li>
+      <li><button class="filter-btn"></button><span>l</span></li>
+      <li><button class="filter-btn"></button><span>xl</span></li>
+      </ul>
+    </div>
+    <button class="saveFilters-btn">Save filters</button>
+    </div>
+    <div class="products">
+      <div class="cards"></div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="contact__title">Subscribe to your newsletter to stay updated about discounts</div>
+    <form>
+      <div class="form__container">
+        <input type="email" name="" id="" placeholder="person@email.com">
+        <button class="contact-btn"></button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
