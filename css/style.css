@@ -197,20 +197,46 @@ body{
 .contact__title {
   margin: 0 auto;
   max-width: 600px;
-  font-size: 30px;
+  font-size: 35px;
   color: white;
   text-transform: capitalize;
 }
-.form input{
+#form_input{
+  width: 240px;
+  color: #CECCCC;
+}
+#contact_form{
+  margin-top: 40px;
 }
 .form__container {
+  padding: 8px 8px 8px 20px;
   margin: 0 auto;
   width: 344px;
   height: 62px;
   border-radius: 42px;
-  border: 1px solid rgba(255,255,255,0.6)
+  border: 1px solid rgba(255,255,255,0.6);
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0,0.15);
 }
 .contact-btn {
+  background-image: url(../img/form_btn.svg);
+  width: 46px;
+  height: 46px;
+}
+/* Footer */
+.footer {
+  border-top: 1px solid #DDDDDD;
+  background-color: var(--bg-color);
+}
+.me {
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+}
+.me a{
+  color: white;
+  text-decoration: underline;
 }
 
 @media (prefers-reduced-motion: no-preference) {

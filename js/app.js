@@ -1,4 +1,4 @@
-const baseUrl = 'https://mock.shop/api';
+const baseUrl = 'https://jsonplaceholder.typicode.com/todos';
 function getData(url, options) {
   // const data = fetch(url).then(res => res.json())
   // return data
