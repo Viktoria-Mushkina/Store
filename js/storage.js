@@ -1,21 +1,4 @@
 
-
-// // Доваление товаров
-// let btnAdd = document.querySelectorAll('#btnAdd');
-// btnAdd.forEach(btn => {
-//   btn.addEventListener('click', () => {
-//     if (localStorage.getItem('cart') !== null){
-//       let cart = cartStorage.getCart();
-//       for(let i = 0; i < cart.length; i++){
-//         cart[i].quantity += 1;
-//         createTable(cart);
-//       }
-      
-//     }
-//   }) 
-// })
-
-
 // Добавление / удаление товаров
 document.addEventListener('click', (e) => {
   if (e.target.classList.contains('cart-btn')) {
