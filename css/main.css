@@ -23,15 +23,14 @@ body{
 .text-h4{
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin: 20px 0;
 }
 .text-p {
   font-size: 22px;
   margin-bottom: 60px;
+  line-height: 35px;
 }
 /* Header */
-.header {
-}
 .header__navigation{
   margin: 20px 0;
   padding: 0 20px;
@@ -62,6 +61,12 @@ body{
 .material-icons {
   cursor: pointer;
   font-size: 30px;
+  color: black;
+  transition: 0.5s;
+}
+.material-icons:hover{
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 .dropbtn {
   font-size: 20px;
@@ -112,6 +117,7 @@ body{
   padding: 30px 20px;
   gap: 20px;
 }
+/* Filters */
 .filters {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
   padding: 10px;
@@ -151,10 +157,23 @@ body{
 }
 .filters span{
   font-size: 20px;
+  text-transform: capitalize;
 }
-.size {
-  margin-top: 30px;
+.catalog__price {
+  margin-top: 20px;
 }
+.catalog__price-container {
+  display: grid;
+  gap: 10px;
+  justify-content: space-between;
+  grid-template-columns: repeat(2,45%);
+}
+.catalog__price-container input{
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 5px;
+}
+/* Products */
 .products{
   margin-right: 20px;
 }
@@ -170,11 +189,19 @@ body{
   border-bottom: 1px solid var(--bg-color);
 }
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.05);
   border-radius: 20px;
   padding: 20px;
   cursor: pointer;
   transition: 0.5s;
+}
+.card__img{
+  height: 250px;
+  width: auto;
+  align-self: center;
 }
 .card:hover{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -188,6 +215,14 @@ body{
 .price > i{
   color: black;
 }
+.price i{
+  transition: 0.5s;
+}
+.price i:hover{
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
 /* Form */
 .contact {
   padding: 80px 0;
@@ -237,8 +272,12 @@ body{
 .me a{
   color: white;
   text-decoration: underline;
+  transition: 0.5s;
 }
-
+.me a:hover{
+  opacity: 0.7;
+  text-decoration: none;
+}
 @media (prefers-reduced-motion: no-preference) {
   :root{
     scroll-behavior: smooth;

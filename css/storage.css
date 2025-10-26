@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+ font-family: "Roboto", sans-serif;
+ background-color: var(--bg-color);
+ color: white;
+}
+:root{
+ --accent-red-color:  rgb(217, 39, 39);
+ --accent-blue-color:  rgb(105, 180, 245);
+ --bg-color:#666;
+}
+.text-h1 {
+ font-size: 40px;
+ font-weight: 700;
+}
+.text-h3{
+ font-size: 22px;
+ display: flex;
+ justify-content: end;
+ margin-top: 20px;
+ text-transform: capitalize;
+ font-weight: 600;
+}
+/* Header */
+.header {
+ padding: 0 40px;
+ margin-top: 60px;
+}
+.header__container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.home a{
+ color: rgb(255, 255, 255);
+ font-size: 20px;
+ text-decoration: underline;
+ font-weight: 500;
+ transition: 0.5s;
+}
+.home a:hover{
+ opacity: 0.7;
+ text-decoration: none;
+}
+/* Storage */
+.storage {
+ margin: 50px 0;
+ padding: 0 40px;
+}
+.storage table{
+ width: 100%;
+ border-collapse: collapse;
+}
+.storage table tr{
+ transition: 0.5s;
+}
+.storage table tr:first-child:hover{
+ background-color: var(--bg-color);
+}
+.storage table tr:hover{
+ background-color: #888888;
+}
+.storage table th{
+ border-bottom: 1px solid rgb(188, 188, 188);
+ padding-bottom: 10px;
+ font-size: 24px;
+}
+.storage table td{
+ text-align: center;
+ padding: 10px; 
+ font-size: 18px;
+}
+.storage table td:first-child{
+ text-align-last: left;
+}
+.quantity{
+ display: flex;
+ justify-content: center;
+ gap: 10px;
+ align-items: center;
+ margin: auto 0;
+}
+.storage table th:first-child{
+ text-align-last: left;
+}
+.storage table th:nth-child(2){
+ width: 15%;
+}
+.storage table th:last-child{
+ width: 15%;
+}
+.product__container{
+ display: flex;
+ align-items: center;
+ gap: 25px;
+}
+.product__container img{
+ width: 110px;
+ height: 120px;
+ align-self: center;
+}
+.table i{
+ cursor: pointer;
+ font-size: 26px;
+}
+/* Footer */
+.footer {
+  border-top: 1px solid #DDDDDD;
+  background-color: var(--bg-color);
+}
+.me {
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+}
+.me a{
+  color: white;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+.me a:hover{
+  opacity: 0.7;
+  text-decoration: none;
+}
